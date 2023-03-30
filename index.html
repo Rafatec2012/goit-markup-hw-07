@@ -15,27 +15,28 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="sass/main.scss" />
   </head>
   <body>
     <header>
-      <div class="container container-header">
-        <a href="./index.html" class="icon-blue">WebStudio</a>
+      <div class="container header__container">
+        <a href="./index.html" class="header-icon__blue">WebStudio</a>
         <nav>
-          <ul class="nav-menu">
-            <li class="nav-item">
-              <a class="link header-id" href="./index.html">studio</a>
+          <ul class="header-nav__menu">
+            <li class="header__item">
+              <a class="link header__link" href="./index.html">studio</a>
             </li>
-            <li class="nav-item">
-              <a href="./portfolio.html" class="header-id">portfolio</a>
+            <li class="header__item">
+              <a href="./portfolio.html" class="header__link">portfolio</a>
             </li>
-            <li><a href="contactos" class="header-id">contactos</a></li>
+            <li>
+              <a href="contactos" class="header__link">contactos</a>
+            </li>
           </ul>
         </nav>
-
-        <ul class="nav-contactos">
-          <li class="email-item">
-            <a href="mailto:info@devstudio.com" class="mail-tel-header"
+        <ul class="header__contactos">
+          <li class="headeremail__item">
+            <a href="mailto:info@devstudio.com" class="headermail__tel"
               ><svg width="16" height="12">
                 <use href="./images/icons.svg#icon-sobre"></use>
               </svg>
@@ -43,7 +44,7 @@
             >
           </li>
           <li>
-            <a href="tel:+573126626952" class="mail-tel-header"
+            <a href="tel:+573126626952" class="headermail__tel"
               ><svg width="10" height="16">
                 <use href="./images/icons.svg#icon-Vector"></use>
               </svg>
@@ -54,117 +55,119 @@
       </div>
     </header>
     <main>
-      <div class="backdrop is-hidden" data-modal>
+      <div class="modal__backdrop is-hidden" data-modal>
         <div class="modal">
-          <button data-modal-close class="modal-close">X</button>
-          <form class="form">
-            <p class="datos-contactos">
+          <button data-modal-close class="modal__close">X</button>
+          <form class="modal__form">
+            <p class="modaldatos__contactos">
               Deje sus datos, nos contactaremos con usted
             </p>
-            <p class="iten-formulario">Nombre</p>
-            <div class="input-contacto">
-              <input class="estilo-input" type="text" />
-              <svg width="15" height="15" class="icon-contacto">
+            <p class="modaliten__formulario">Nombre</p>
+            <div class="modalinput__contacto">
+              <input class="modalestilo__input" type="text" />
+              <svg width="15" height="15" class="modalicon__contacto">
                 <use href="./images/icon-formularios.svg#icon-Vector-2"></use>
               </svg>
             </div>
-            <p class="iten-formulario">Telefono</p>
-            <div class="input-contacto">
-              <input class="estilo-input" type="text" />
-              <svg width="15" heigh="15" class="icon-contacto">
+            <p class="modaliten__formulario">Telefono</p>
+            <div class="modalinput__contacto">
+              <input class="modalestilo__input" type="text" />
+              <svg width="15" heigh="15" class="modalicon__contacto">
                 <use href="./images/icon-formularios.svg#icon-Vector-1"></use>
               </svg>
             </div>
-            <p class="iten-formulario">E-mail</p>
-            <div class="input-contacto">
-              <input class="estilo-input" type="text" />
-              <svg width="15" heigh="15" class="icon-contacto">
+            <p class="modaliten__formulario">E-mail</p>
+            <div class="modalinput__contacto">
+              <input class="modalestilo__input" type="text" />
+              <svg width="15" heigh="15" class="modalicon__contacto">
                 <use href="./images/icon-formularios.svg#icon-Vector"></use>
               </svg>
             </div>
-            <p class="iten-formulario">Comentarios</p>
-            <div class="imput-tex">
+            <p class="modaliten__formulario">Comentarios</p>
+            <div class="modalimput__tex">
               <input
-                class="input-comentarios"
+                class="modalinput__comentarios"
                 placeholder="Introduzca el texto"
                 type="text"
               />
             </div>
-            <label class="cassilla">
+            <label class="modal__cassilla">
               <input
                 class="checkbox"
                 type="checkbox"
                 name="policy"
                 value="accept"
               />
-              <svg class="icon-input" width="16px" heigh="16">
+              <svg class="modalicon__input" width="16px" heigh="16">
                 <use href="./images/chulito.svg#icon-Vector-2"></use>
               </svg>
             </label>
-            <p class="tex-acuerdo">
+            <p class="modaltex__acuerdo">
               Estoy de acuerdo con el boletín informativo y acepto los Términos
               y Condiciones
             </p>
-            <div class="alin-tex-enviar">
-              <button class="bot-enviar-input" type="submit">Enviar</button>
+            <div class="modalalin__texenviar">
+              <button class="modalbot__enviarinput" type="submit">
+                Enviar
+              </button>
             </div>
           </form>
         </div>
       </div>
-      <section class="containertit section">
-        <h1 class="intro-title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-        <button type="button" data-modal-open class="intro-bot">
+      <section class="section__containertit section">
+        <h1 class="sectionintro__title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+        <button type="button" data-modal-open class="sectionintro__bot">
           solicite nuestro servicio
         </button>
       </section>
       <section class="section">
         <div class="container">
-          <ul class="flex-container">
+          <ul class="sectiontwoflex__container">
             <li>
-              <div class="antena-ymas">
+              <div class="section__iconos">
                 <svg width="65.32" height="70">
                   <use href="./images/icons.svg#icon-antena-1"></use>
                 </svg>
               </div>
-              <h3 class="title-servicios">ATENCION A LOS DETALLES</h3>
-              <p class="detalles">
+              <h3 class="sectiontitle__servicios">ATENCION A LOS DETALLES</h3>
+              <p class="section__detalles">
                 Nos adentramos en todos los detalles y procesos de su negocio,
                 para asi desarrollar una solucion a su medida.
               </p>
             </li>
             <li>
-              <div class="reloj">
+              <div class="section__reloj">
                 <svg width="66.96" height="70">
                   <use href="./images/icons.svg#icon-reloj-1"></use>
                 </svg>
               </div>
-              <h3 class="title-servicios">PUNTUALIDAD</h3>
-              <p class="detalles">
+              <h3 class="sectiontitle__servicios">PUNTUALIDAD</h3>
+              <p class="section__detalles">
                 Con nosotros, usted puede sentirse seguro y protegido. Un
                 principio importante de la empresa: respetar su tiempo y
                 respetar los plazos acordados.
               </p>
             </li>
             <li>
-              <div class="antena-ymas">
+              <div class="section__iconos">
                 <svg width="70" height="53.69">
                   <use href="./images/icons.svg#icon-diagrama-1"></use>
                 </svg>
               </div>
-              <h3 class="title-servicios">PLANIFICACION</h3>
-              <p class="detalles">
+              <h3 class="sectiontitle__servicios">PLANIFICACION</h3>
+              <p class="section__detalles">
                 Usted podra observar y participar en cada fase del desarrollo y
                 aplicacion de soluciones.
               </p>
             </li>
             <li>
-              <div class="antena-ymas">
+              <div class="section__iconos">
                 <svg width="54.83" height="60.66">
                   <use href="./images/icons.svg#icon-astronauta-1"></use>
                 </svg>
               </div>
-              <h3 class="title-servicios">TECNOLOGIA MODERNA</h3>
-              <p class="detalles">
+              <h3 class="sectiontitle__servicios">TECNOLOGIA MODERNA</h3>
+              <p class="section__detalles">
                 Usamos herramientas innovadoras para resolver las tareas
                 asignadas. Es hora de simplificar los procesos laborales.
               </p>
@@ -174,68 +177,68 @@
       </section>
       <section class="section">
         <div class="container">
-          <h2 class="conocenos">A qué nos dedicamos</h2>
-          <ul class="images-productos">
-            <li class="imagestilos">
-              <div class="oneimagen">
+          <h2 class="sectionthree__conocenos">A qué nos dedicamos</h2>
+          <ul class="sectionthree__productos">
+            <li class="sectionthree__imagestilos">
+              <div class="sectionthree__imagen">
                 <img src="./images/tablet.jpg" alt="tablet" width="300" />
-                <div class="probando">
-                  <p class="hp">Aplicaciones de Escritorio</p>
+                <div class="section__three">
+                  <p class="section__threehp">Aplicaciones de Escritorio</p>
                 </div>
               </div>
             </li>
-            <li class="imagestilos">
-              <div class="oneimagen">
+            <li class="sectionthree__imagestilos">
+              <div class="sectionthree__imagen">
                 <img src="./images/algoritmo.jpg" alt="algoritmo" width="300" />
-                <div class="probando">
-                  <p class="hp">Aplicaciones Móviles</p>
+                <div class="section__three">
+                  <p class="section__threehp">Aplicaciones Móviles</p>
                 </div>
               </div>
             </li>
-            <li class="imagestilos">
-              <div class="oneimagen">
+            <li class="sectionthree__imagestilos">
+              <div class="sectionthree__imagen">
                 <img src="./images/celular.jpg" alt="celular" width="300" />
-                <div class="probando">
-                  <p class="hp">Soluciones de Diseño</p>
+                <div class="section__three">
+                  <p class="section__threehp">Soluciones de Diseño</p>
                 </div>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="seccion-sec section">
+      <section class="section__four section">
         <div class="container">
-          <h2 class="conocenos">Nuestro Equipo</h2>
-          <ul class="nuestro-equipo">
-            <li class="img">
+          <h2 class="sectionthree__conocenos">Nuestro Equipo</h2>
+          <ul class="sectionfour__equipo">
+            <li class="sectionfour__img">
               <img
-                class="images-equipo"
+                class="sectionfourimages__equipo"
                 src="./images/gafassonriente.jpg"
                 alt="gafassonriente"
                 width="300"
               />
               <div>
                 <div>
-                  <h3 class="nombres">Andres cubo</h3>
-                  <p class="profeciones-activ">Diseñador de producto</p>
+                  <h3 class="sectionfour__nombres">Andres cubo</h3>
+                  <p class="sectionfour__profeciones">Diseñador de producto</p>
                 </div>
-                <ul class="redes-profeciones">
-                  <li class="icon-container">
+                <ul class="sectionfour__redes">
+                  <li class="sectionfour__icon">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram-2"></use>
                     </svg>
                   </li>
-                  <li class="icon-container">
+                  <li class="sectionfour__icon">
                     <svg width="20" height="16.25">
                       <use href="./images/icons.svg#icon-twitter-1-1"></use>
                     </svg>
                   </li>
-                  <li class="icon-container">
+                  <li class="sectionfour__icon">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook-1-1"></use>
                     </svg>
                   </li>
-                  <li class="icon-container">
+                  <li class="sectionfour__icon">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin-1"></use>
                     </svg>
@@ -243,35 +246,37 @@
                 </ul>
               </div>
             </li>
-            <li class="img">
+            <li class="sectionfour__img">
               <img
-                class="images-equipo"
+                class="sectionfourimages__equipo"
                 src="./images/señoracongafas.jpg"
                 alt="señoracongafas"
                 width="300"
               />
               <div>
                 <div>
-                  <h3 class="nombres">Carla palacios</h3>
-                  <p class="profeciones-activ">Desarrolladora frontend</p>
+                  <h3 class="sectionfour__nombres">Carla palacios</h3>
+                  <p class="sectionfour__profeciones">
+                    Desarrolladora frontend
+                  </p>
                 </div>
-                <ul class="redes-profeciones">
-                  <li class="icon-container">
+                <ul class="sectionfour__redes">
+                  <li class="sectionfour__icon">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram-2"></use>
                     </svg>
                   </li>
-                  <li class="icon-container">
+                  <li class="sectionfour__icon">
                     <svg width="20" height="16.25">
                       <use href="./images/icons.svg#icon-twitter-1-1"></use>
                     </svg>
                   </li>
-                  <li class="icon-container">
+                  <li class="sectionfour__icon">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook-1-1"></use>
                     </svg>
                   </li>
-                  <li class="icon-container">
+                  <li class="sectionfour__icon">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin-1"></use>
                     </svg>
@@ -279,35 +284,35 @@
                 </ul>
               </div>
             </li>
-            <li class="img">
+            <li class="sectionfour__img">
               <img
-                class="images-equipo"
+                class="sectionfourimages__equipo"
                 src="./images/muchachorie.jpg"
                 alt="muchachorie"
                 width="300"
               />
               <div>
                 <div>
-                  <h3 class="nombres">Mario Dorado</h3>
-                  <p class="profeciones-activ">Marketing</p>
+                  <h3 class="sectionfour__nombres">Mario Dorado</h3>
+                  <p class="sectionfour__profeciones">Marketing</p>
                 </div>
-                <ul class="redes-profeciones">
-                  <li class="icon-container">
+                <ul class="sectionfour__redes">
+                  <li class="sectionfour__icon">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram-2"></use>
                     </svg>
                   </li>
-                  <li class="icon-container">
+                  <li class="sectionfour__icon">
                     <svg width="20" height="16.25">
                       <use href="./images/icons.svg#icon-twitter-1-1"></use>
                     </svg>
                   </li>
-                  <li class="icon-container">
+                  <li class="sectionfour__icon">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook-1-1"></use>
                     </svg>
                   </li>
-                  <li class="icon-container">
+                  <li class="sectionfour__icon">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin-1"></use>
                     </svg>
@@ -315,35 +320,35 @@
                 </ul>
               </div>
             </li>
-            <li class="img">
+            <li class="sectionfour__img">
               <img
-                class="images-equipo"
+                class="sectionfourimages__equipo"
                 src="./images/muchachogafas.jpg"
                 alt="muchachogafas"
                 width="300"
               />
               <div>
                 <div>
-                  <h3 class="nombres">Pablo Mijangos</h3>
-                  <p class="profeciones-activ">Diseñador IU</p>
+                  <h3 class="sectionfour__nombres">Pablo Mijangos</h3>
+                  <p class="sectionfour__profeciones">Diseñador IU</p>
                 </div>
-                <ul class="redes-profeciones">
-                  <li class="icon-container">
+                <ul class="sectionfour__redes">
+                  <li class="sectionfour__icon">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram-2"></use>
                     </svg>
                   </li>
-                  <li class="icon-container">
+                  <li class="sectionfour__icon">
                     <svg width="20" height="16.25">
                       <use href="./images/icons.svg#icon-twitter-1-1"></use>
                     </svg>
                   </li>
-                  <li class="icon-container">
+                  <li class="sectionfour__icon">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook-1-1"></use>
                     </svg>
                   </li>
-                  <li class="icon-container">
+                  <li class="sectionfour__icon">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin-1"></use>
                     </svg>
@@ -353,116 +358,116 @@
             </li>
           </ul>
         </div>
-        <section class="section">
-          <div class="container">
-            <div>
-              <h2 class="clientes">Clientes Regulares</h2>
-            </div>
-            <ul class="company">
-              <li class="iconservi">
-                <svg width="41px" height="46.7px" class="recuadros">
-                  <use
-                    class="iconservi"
-                    href="./images/icons.svg#icon-Union"
-                  ></use>
-                </svg>
-              </li>
-              <li class="iconservi">
-                <svg width="40" height="52">
-                  <use class="hey" href="./images/icons.svg#icon-Union-1"></use>
-                </svg>
-              </li>
-              <li class="iconservi">
-                <svg class="recuadros" width="43.46" height="41.18">
-                  <use class="hey" href="./images/icons.svg#icon-Logo"></use>
-                </svg>
-              </li>
-              <li class="iconservi">
-                <svg class="recuadros" width="84.44" height="40.62">
-                  <use class="hey" href="./images/icons.svg#icon-Logo-1"></use>
-                </svg>
-              </li>
-              <li class="iconservi">
-                <svg class="recuadros" width="62.54" height="45.43">
-                  <use class="hey" href="./images/icons.svg#icon-Logo-2"></use>
-                </svg>
-              </li>
-              <li class="iconservi">
-                <svg class="recuadros" width="43.46" height="41.18">
-                  <use class="hey" href="./images/icons.svg#icon-Logo-3"></use>
-                </svg>
-              </li>
-            </ul>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div>
+            <h2 class="sectionfive__clientes">Clientes Regulares</h2>
           </div>
-        </section>
+          <ul class="sectionfive__company">
+            <li class="sectionfive__iconservi">
+              <svg class="sectionfive__recuadros" width="41px" height="46.7px">
+                <use href="./images/icons.svg#icon-Union"></use>
+              </svg>
+            </li>
+            <li class="sectionfive__iconservi">
+              <svg width="40" height="52">
+                <use href="./images/icons.svg#icon-Union-1"></use>
+              </svg>
+            </li>
+            <li class="sectionfive__iconservi">
+              <svg class="sectionfive__recuadros" width="43.46" height="41.18">
+                <use href="./images/icons.svg#icon-Logo"></use>
+              </svg>
+            </li>
+            <li class="sectionfive__iconservi">
+              <svg class="sectionfive__recuadros" width="84.44" height="40.62">
+                <use
+                  class="sectionfive__logos"
+                  href="./images/icons.svg#icon-Logo-1"
+                ></use>
+              </svg>
+            </li>
+            <li class="sectionfive__iconservi">
+              <svg class="sectionfive__recuadros" width="62.54" height="45.43">
+                <use href="./images/icons.svg#icon-Logo-2"></use>
+              </svg>
+            </li>
+            <li class="sectionfive__iconservi">
+              <svg class="sectionfive__recuadros" width="43.46" height="41.18">
+                <use href="./images/icons.svg#icon-Logo-3"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container address">
-        <div class="div-address">
-          <a href="./index.html" class="icon-blue-footer">WebStudio</a>
+      <div class="container footer__address">
+        <div>
+          <a href="./index.html" class="footer__iconblue">WebStudio</a>
           <address>
-            <ul class="direccion">
+            <ul class="footer__direccion">
               <li>
                 <a>Calz. Ticoman 500, Ciudad de Mexico, CDMX, Mexico</a>
               </li>
               <li>
-                <a href="mailto:info@devstudio.com" class="mail-tel-footer"
+                <a href="mailto:info@devstudio.com" class="footer__mailtel"
                   >info@devstudio.com</a
                 >
               </li>
               <li>
-                <a href="tel:+573126626952" class="mail-tel-footer"
+                <a href="tel:+573126626952" class="footer__mailtel"
                   >+573126626952</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="iconos-footer">
-          <p class="avisos">encuentrenos en</p>
-          <ul class="heyiconos">
-            <li class="icon-yei">
+        <div class="footer__iconos">
+          <p class="footer__avisos">encuentrenos en</p>
+          <ul class="footer__icon">
+            <li class="footer__yei">
               <a href="#">
-                <svg class="cambia" width="20" height="20">
+                <svg class="footer__cambia" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon-yei">
+            <li class="footer__yei">
               <a href="#">
-                <svg class="cambia" width="20" height="16.25">
+                <svg class="footer__cambia" width="20" height="16.25">
                   <use href="./images/icons.svg#icon-twitter-1-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon-yei">
+            <li class="footer__yei">
               <a href="#"
-                ><svg class="cambia" width="20" height="20">
+                ><svg class="footer__cambia" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook-1-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon-yei">
+            <li class="footer__yei">
               <a href="#"
-                ><svg class="cambia" width="20" height="20">
+                ><svg class="footer__cambia" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <form class="form-position">
-          <h4 class="boletin-fotter">Suscríbase al boletín informativo</h4>
-          <div class="positions-input">
+        <form class="footer__form">
+          <h4 class="footer__boletin">Suscríbase al boletín informativo</h4>
+          <div class="footer-positions">
             <input
-              class="input-fotter"
+              class="footer__input"
               type="text"
               placeholder="correo elctronico"
             />
-            <button class="boton-suscripcion">
+            <button class="footer__boton">
               Suscríbase
-              <svg class="for-button-footer" width="20" height="20">
+              <svg width="20" height="20">
                 <use
                   href="./images/icon-formularios.svg#icon-enviar-cono"
                 ></use>

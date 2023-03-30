@@ -1,0 +1,46 @@
+//normaline//
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto; }
+
+.link::after{
+    position: absolute;
+    display: block;
+   width: 60px;
+   height: 5px;
+   background-color: #2196f3;
+   border-radius: 7px;
+  content: '';
+  bottom: 0;
+  right: 0;
+  }
+  .link{
+    color: $primary-color;
+  }
+  p {
+    color: #757575;
+  }
+  a {color: currentColor;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  ul,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  svg{
+    fill:currentColor;
+  }
