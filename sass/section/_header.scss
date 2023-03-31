@@ -1,24 +1,25 @@
 //datos del header//
+header {
+  border-bottom: 2px solid #ececec;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
 
-
-.header__container{
+&__container{
     display: flex;
     align-items: center;
-
  
-    &-icon__blue {
-      color: $primary-color;
-      font-family: 'Raleway';
-      font-weight: 700;
-      font-size: 26px;
-      font-style: normal;
-      line-height: 1.1;
-      letter-spacing: 0.03em;
-    }
   }
- 
-
- 
+  &-icon__blue {
+    color: $primary-color;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+  }
   &-nav__menu{
     display: flex;
   }
