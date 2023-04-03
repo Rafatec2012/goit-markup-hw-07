@@ -15,28 +15,28 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="sass/main.scss" />
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container header__container">
-        <a href="./index.html" class="header-icon__blue">WebStudio</a>
+        <a href="./index.html" class="header__iconblue">WebStudio</a>
         <nav>
-          <ul class="header-nav__menu">
+          <ul class="header__nav-menu">
             <li class="header__item">
-              <a class="link header__link" href="./index.html">studio</a>
+              <a class="link header__line" href="./index.html">studio</a>
             </li>
             <li class="header__item">
-              <a href="./portfolio.html" class="header__link">portfolio</a>
+              <a href="./portfolio.html" class="header__line">portfolio</a>
             </li>
             <li>
-              <a href="contactos" class="header__link">contactos</a>
+              <a href="contactos" class="header__line">contactos</a>
             </li>
           </ul>
         </nav>
         <ul class="header__contactos">
-          <li class="headeremail__item">
-            <a href="mailto:info@devstudio.com" class="headermail__tel"
+          <li class="header__mail-item">
+            <a href="mailto:info@devstudio.com" class="header__mail-tel"
               ><svg width="16" height="12">
                 <use href="./images/icons.svg#icon-sobre"></use>
               </svg>
@@ -44,7 +44,7 @@
             >
           </li>
           <li>
-            <a href="tel:+573126626952" class="headermail__tel"
+            <a href="tel:+573126626952" class="header__mail-tel"
               ><svg width="10" height="16">
                 <use href="./images/icons.svg#icon-Vector"></use>
               </svg>
@@ -55,8 +55,8 @@
       </div>
     </header>
     <main>
-      <div class="modal__backdrop is-hidden" data-modal>
-        <div class="modal">
+      <div class="modal is-hidden" data-modal>
+        <div class="modal__backdrop">
           <button data-modal-close class="modal__close">X</button>
           <form class="modal__form">
             <p class="modaldatos__contactos">
@@ -175,38 +175,38 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="sectionthree sesection">
         <div class="container">
           <h2 class="sectionthree__conocenos">A qué nos dedicamos</h2>
           <ul class="sectionthree__productos">
             <li class="sectionthree__imagestilos">
               <div class="sectionthree__imagen">
                 <img src="./images/tablet.jpg" alt="tablet" width="300" />
-                <div class="section__three">
-                  <p class="section__threehp">Aplicaciones de Escritorio</p>
+                <div class="sectionthree__exclu">
+                  <p class="sectionthree__hp">Aplicaciones de Escritorio</p>
                 </div>
               </div>
             </li>
             <li class="sectionthree__imagestilos">
               <div class="sectionthree__imagen">
                 <img src="./images/algoritmo.jpg" alt="algoritmo" width="300" />
-                <div class="section__three">
-                  <p class="section__threehp">Aplicaciones Móviles</p>
+                <div class="sectionthree__exclu">
+                  <p class="sectionthree__hp">Aplicaciones Móviles</p>
                 </div>
               </div>
             </li>
             <li class="sectionthree__imagestilos">
               <div class="sectionthree__imagen">
                 <img src="./images/celular.jpg" alt="celular" width="300" />
-                <div class="section__three">
-                  <p class="section__threehp">Soluciones de Diseño</p>
+                <div class="sectionthree__exclu">
+                  <p class="sectionthree__hp">Soluciones de Diseño</p>
                 </div>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section__four section">
+      <section class="sectionfour section">
         <div class="container">
           <h2 class="sectionthree__conocenos">Nuestro Equipo</h2>
           <ul class="sectionfour__equipo">
@@ -359,7 +359,7 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="sectionfive section">
         <div class="container">
           <div>
             <h2 class="sectionfive__clientes">Clientes Regulares</h2>
@@ -459,7 +459,7 @@
         </div>
         <form class="footer__form">
           <h4 class="footer__boletin">Suscríbase al boletín informativo</h4>
-          <div class="footer-positions">
+          <div class="footer__positions">
             <input
               class="footer__input"
               type="text"

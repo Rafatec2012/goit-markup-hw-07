@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,34 +20,34 @@
     />
   </head>
   <body>
-    <header>
-      <div class="container container__header">
-        <a href="./index.html" class="containericon__blue">WebStudio</a>
+    <header class="header">
+      <div class="container header__container">
+        <a href="./index.html" class="header__iconblue">WebStudio</a>
         <nav>
-          <ul class="containernav__menu">
-            <li class="containernav__item">
-              <a href="./index.html" class="header-id">studio</a>
+          <ul class="header__nav-menu">
+            <li class="header__item">
+              <a class="header__line" href="./index.html">studio</a>
             </li>
-            <li class="containernav__item">
-              <a class="link containerheader__id" href="./portfolio.html"
-                >portfolio</a
-              >
+            <li class="header__item">
+              <a href="./portfolio.html" class="header__line link">portfolio</a>
             </li>
-            <li><a href="contactos" class="header-id">contactos</a></li>
+            <li>
+              <a href="contactos" class="header__line">contactos</a>
+            </li>
           </ul>
         </nav>
-        <ul class="nav-contactos">
-          <li class="email-item">
-            <a href="mailto:info@devstudio.com" class="mail-tel-header mai"
-              ><svg class="mai" width="16" height="12">
+        <ul class="header__contactos">
+          <li class="header__mail-item">
+            <a href="mailto:info@devstudio.com" class="header__mail-tel"
+              ><svg width="16" height="12">
                 <use href="./images/icons.svg#icon-sobre"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
           <li>
-            <a href="tel:+573126626952" class="mail-tel-header mai"
-              ><svg class="mai" width="10" height="16">
+            <a href="tel:+573126626952" class="header__mail-tel"
+              ><svg width="10" height="16">
                 <use href="./images/icons.svg#icon-Vector"></use>
               </svg>
               +573126626952</a
@@ -59,26 +59,30 @@
     <main class="container">
       <section class="section">
         <div>
-          <ul class="menu-portafolio">
-            <li><button type="button" class="entrar">Todo</button></li>
+          <ul class="main__portafolio">
+            <li><button type="button" class="main__entrar">Todo</button></li>
             <li>
-              <button type="button" class="nav-web">Sitios-web</button>
+              <button type="button" class="main__nav-web">Sitios-web</button>
             </li>
-            <li><button type="button" class="nav-web">Aplicaciones</button></li>
-            <li><button type="button" class="nav-web">Diseño</button></li>
-            <li><button type="button" class="nav-web">Marketing</button></li>
+            <li>
+              <button type="button" class="main__nav-web">Aplicaciones</button>
+            </li>
+            <li><button type="button" class="main__nav-web">Diseño</button></li>
+            <li>
+              <button type="button" class="main__nav-web">Marketing</button>
+            </li>
           </ul>
-          <ul class="entretenimiento">
-            <li class="overlay">
-              <div class="estilimages">
+          <ul class="main__entretenimiento">
+            <li class="main__overlay">
+              <div class="main__images">
                 <img
-                  class="play"
+                  class="main__play"
                   src="./images/Photographs.jpg"
                   alt="Photographs"
                   width="370"
                 />
                 <div>
-                  <p class="tecnoduck">
+                  <p class="main__tecnoduck">
                     Tecnoduck es una plataforma de distribución de coronavirus
                     de última generación. Las compañías usan esta plataforma
                     para el espionaje digital y los ataques a los servidores
@@ -87,106 +91,106 @@
                 </div>
               </div>
               <div>
-                <h3 class="actividades">Tecnoduck</h3>
-                <p class="sub-actividades">Sitios-web</p>
+                <h3 class="main__activ">Tecnoduck</h3>
+                <p class="main__apli">Sitios-web</p>
               </div>
             </li>
             <li>
               <img
-                class="play"
+                class="main__play"
                 src="./images/basketball.jpg"
                 alt="basketball"
                 width="370"
               />
               <div>
-                <h3 class="actividades">
+                <h3 class="main__activ">
                   Póster de Nueva Orleans vs Estrella Dorada
                 </h3>
-                <p class="sub-actividades">Diseño</p>
+                <p class="main__apli">Diseño</p>
               </div>
             </li>
             <li>
               <img
-                class="play"
+                class="main__play"
                 src="./images/restaurant.jpg"
                 alt="advertising"
                 width="370"
               />
               <div>
-                <h3 class="actividades">Restaurante Seafood</h3>
-                <p class="sub-actividades">Aplicaciones</p>
+                <h3 class="main__activ">Restaurante Seafood</h3>
+                <p class="main__apli">Aplicaciones</p>
               </div>
             </li>
             <li>
               <img
-                class="play"
+                class="main__play"
                 src="./images/diadem.jpg"
                 alt="diadem"
                 width="370"
               />
               <div>
-                <h3 class="actividades">Proyecto Prime</h3>
-                <p class="sub-actividades">Marketing</p>
+                <h3 class="main__activ">Proyecto Prime</h3>
+                <p class="main__apli">Marketing</p>
               </div>
             </li>
             <li>
               <img
-                class="play"
+                class="main__play"
                 src="./images/boxes.jpg"
                 alt="boxes"
                 width="370"
               />
               <div>
-                <h3 class="actividades">Proyecto Cajas</h3>
-                <p class="sub-actividades">Apliicaciones</p>
+                <h3 class="main__activ">Proyecto Cajas</h3>
+                <p class="main__apli">Apliicaciones</p>
               </div>
             </li>
             <li>
               <img
-                class="play"
+                class="main__play"
                 src="./images/monitor.jpg"
                 alt="monitor"
                 width="370"
               />
               <div>
-                <h3 class="actividades">La inspiración no tiene límites</h3>
-                <p class="sub-actividades">Sitio-web</p>
+                <h3 class="main__activ">La inspiración no tiene límites</h3>
+                <p class="main__apli">Sitio-web</p>
               </div>
             </li>
             <li>
               <img
-                class="play"
+                class="main__play"
                 src="./images/magazine.jpg"
                 alt="magazine"
                 width="370"
               />
               <div>
-                <h3 class="actividades">Edición Limitada</h3>
-                <p class="sub-actividades">Diseño</p>
+                <h3 class="main__activ">Edición Limitada</h3>
+                <p class="main__apli">Diseño</p>
               </div>
             </li>
             <li>
               <img
-                class="play"
+                class="main__play"
                 src="./images/label.jpg"
                 alt="label"
                 width="370"
               />
               <div>
-                <h3 class="actividades">Proyecto LAB</h3>
-                <p class="sub-actividades">Marketing</p>
+                <h3 class="main__activ">Proyecto LAB</h3>
+                <p class="main__apli">Marketing</p>
               </div>
             </li>
             <li>
               <img
-                class="play"
+                class="main__play"
                 src="./images/laptop.jpg"
                 alt="laptop"
                 width="370"
               />
               <div>
-                <h3 class="actividades">Negocio en Crecimiento</h3>
-                <p class="sub-actividades">Aplicaciones</p>
+                <h3 class="main__activ">Negocio en Crecimiento</h3>
+                <p class="main__apli">Aplicaciones</p>
               </div>
             </li>
           </ul>
@@ -194,71 +198,71 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container address">
-        <div class="div-address">
-          <a href="./index.html" class="icon-blue-footer">WebStudio</a>
+      <div class="container footer__address">
+        <div>
+          <a href="./index.html" class="footer__iconblue">WebStudio</a>
           <address>
-            <ul class="direccion">
+            <ul class="footer__direccion">
               <li>
                 <a>Calz. Ticoman 500, Ciudad de Mexico, CDMX, Mexico</a>
               </li>
               <li>
-                <a href="mailto:info@devstudio.com" class="mail-tel-footer"
+                <a href="mailto:info@devstudio.com" class="footer__mailtel"
                   >info@devstudio.com</a
                 >
               </li>
               <li>
-                <a href="tel:+573126626952" class="mail-tel-footer"
+                <a href="tel:+573126626952" class="footer__mailtel"
                   >+573126626952</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="iconos-footer">
-          <p class="avisos">encuentrenos en</p>
-          <ul class="heyiconos">
-            <li class="icon-yei">
+        <div class="footer__iconos">
+          <p class="footer__avisos">encuentrenos en</p>
+          <ul class="footer__icon">
+            <li class="footer__yei">
               <a href="#">
-                <svg class="cambia" width="20" height="20">
+                <svg class="footer__cambia" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon-yei">
+            <li class="footer__yei">
               <a href="#">
-                <svg class="cambia" width="20" height="16.25">
+                <svg class="footer__cambia" width="20" height="16.25">
                   <use href="./images/icons.svg#icon-twitter-1-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon-yei">
+            <li class="footer__yei">
               <a href="#"
-                ><svg class="cambia" width="20" height="20">
+                ><svg class="footer__cambia" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook-1-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon-yei">
+            <li class="footer__yei">
               <a href="#"
-                ><svg class="cambia" width="20" height="20">
+                ><svg class="footer__cambia" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <form class="form-position">
-          <h4 class="boletin-fotter">Suscríbase al boletín informativo</h4>
-          <div class="positions-input">
+        <form class="footer__form">
+          <h4 class="footer__boletin">Suscríbase al boletín informativo</h4>
+          <div class="footer__positions">
             <input
-              class="input-fotter"
+              class="footer__input"
               type="text"
               placeholder="correo elctronico"
             />
-            <button class="boton-suscripcion">
+            <button class="footer__boton">
               Suscríbase
-              <svg class="for-button-footer" width="20" height="20">
+              <svg width="20" height="20">
                 <use
                   href="./images/icon-formularios.svg#icon-enviar-cono"
                 ></use>
