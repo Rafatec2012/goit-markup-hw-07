@@ -1,3 +1,7 @@
+$text-decoration: #212121;
+$text-orientation: #757575;
+$primary-color:    #2196f3;
+$color: #ffffff #2f303a; 
 
  
 
@@ -66,4 +70,6 @@ svg{
   appearance: none;
 
  }
-  
+ .main__overlay:hover .main__tecnoduck{
+  transform: translatey(-294px);
+}

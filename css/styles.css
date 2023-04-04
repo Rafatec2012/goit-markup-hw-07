@@ -150,7 +150,7 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
   text-align: center;
- margin-top: -10px;
+
   
  
 }
@@ -158,8 +158,8 @@ body {
 .sectionfour {
   background-color: #f5f4fa;
   height: 780px;
-  margin-block: 300px;
-  margin-top:  -80px;
+  margin-block: 150px;
+ top: 80px;
  
 }
 ul {
